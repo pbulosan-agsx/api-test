@@ -4,7 +4,7 @@ info:
   title: Swagger Petstore
   description: >
     A sample API that uses a petstore as an example
-    to demonstrate features in the swagger-2.0 specification
+    to demonstrate features in the swagger-2.0 specification --> update test from github
 consumes:
   - application/json
 produces:
