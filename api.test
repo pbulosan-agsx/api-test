@@ -1,0 +1,22 @@
+openapi: 3.0.3
+info:
+  title: Test API
+  description: |-
+    This is the REST API
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000/api/v1
+
+paths:
+  /health-check:
+    get:
+      tags:
+        - Health Check
+      description: Returns the status of the API
+      responses:
+        "200":
+          $ref: "#/components/responses/HealthCheckResponse"
+        "406":
+          $ref: "#/components/responses/NotAcceptableError"
+        "500":
+          $ref: "#/components/responses/InternalServerError"
